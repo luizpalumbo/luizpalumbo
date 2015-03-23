@@ -4,7 +4,7 @@ package cm.java.jpa.entidades;
 public class NoticiaIdClasseId {
 
   // ======================================
-  // =             Attributos             =
+  // =             Atributos              =
   // ======================================
 
   private String titulo;

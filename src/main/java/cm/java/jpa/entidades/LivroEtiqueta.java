@@ -1,11 +1,21 @@
 package cm.java.jpa.entidades;
 
-import javax.persistence.*;
+
+import java.util.ArrayList;
+import java.util.List;
+import javax.persistence.CollectionTable;
+import javax.persistence.ElementCollection;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 
 @Entity
-@Table(name = "T_Livros")
-public class LivroColumn {
+@Table(name = "T_Livro_Etiqueta")
+public class LivroEtiqueta {
 
   // ======================================
   // =             Atributos              =
@@ -14,30 +24,32 @@ public class LivroColumn {
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
   private Long id;
-  @Column(name = "livro_titulo", nullable = false, updatable = false)
   private String titulo;
   private Float preco;
-  @Column(length = 2000)
   private String descricao;
   private String isbn;
-  @Column(name = "nro_de_paginas", nullable = false)
   private Integer nroDePaginas;
   private Boolean ilustracoes;
+  @ElementCollection(fetch = FetchType.LAZY)
+  @CollectionTable(name = "t_etiquetas")
+  // @Column(name = "Preco")
+  private List<String> etiquetas = new ArrayList<>();
 
   // ======================================
   // =            Construtores            =
   // ======================================
 
-  public LivroColumn() {
+  public LivroEtiqueta() {
   }
 
-  public LivroColumn(String tituloParam, Float precoParam, String descricaoParam, String isbnParam, Integer nroDePaginasParam, Boolean ilustracoesParam) {
-    titulo = tituloParam;
-    preco = precoParam;
-    descricao = descricaoParam;
-    isbn = isbnParam;
-    nroDePaginas = nroDePaginasParam;
-    ilustracoes = ilustracoesParam;
+  public LivroEtiqueta(String titleParam, Float precoParam, String descricaoParam, String isbnParam, Integer nroDePaginasParam, Boolean ilustracoesParam, ArrayList<String> etiquetas) {
+    this.titulo = titleParam;
+    this.preco = precoParam;
+    this.descricao = descricaoParam;
+    this.isbn = isbnParam;
+    this.nroDePaginas = nroDePaginasParam;
+    this.ilustracoes = ilustracoesParam;
+    this.etiquetas = etiquetas;
   }
 
   // ======================================
@@ -94,5 +106,13 @@ public class LivroColumn {
 
   public void setIlustracoes(Boolean ilustracoes) {
     this.ilustracoes = ilustracoes;
+  }
+
+  public List<String> getEtiquetas() {
+    return etiquetas;
+  }
+
+  public void setTags(ArrayList<String> etiquetas) {
+    this.etiquetas = etiquetas;
   }
 }

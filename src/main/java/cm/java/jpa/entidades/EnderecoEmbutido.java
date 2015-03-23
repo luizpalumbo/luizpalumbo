@@ -1,42 +1,33 @@
 package cm.java.jpa.entidades;
 
-import javax.persistence.*;
+import javax.persistence.Access;
+import javax.persistence.AccessType;
+import javax.persistence.Column;
+import javax.persistence.Embeddable;
 
-
-@Entity
-@Table(name = "t_endereco")
-@SecondaryTables({
-        @SecondaryTable(name = "t_cidade"),
-        @SecondaryTable(name = "t_pais")
-})
-public class Endereco {
+@Embeddable
+@Access(AccessType.PROPERTY)
+public class EnderecoEmbutido {
 
   // ======================================
-  // =             Atributos             =
+  // =             Atributos              =
   // ======================================
 
-  @Id
-  private Long id;
   private String rua1;
   private String rua2;
-  @Column(table = "t_cidade")
   private String cidade;
-  @Column(table = "t_cidade")
   private String estado;
-  @Column(table = "t_cidade")
   private String cep;
-  @Column(table = "t_pais")
   private String pais;
 
   // ======================================
   // =            Construtores            =
   // ======================================
 
-  public Endereco() {
+  public EnderecoEmbutido() {
   }
 
-  public Endereco(Long idParam, String rua1Param, String rua2Param, String cidadeParam, String estadoParam, String cepParam, String paisParam) {
-    id = idParam;
+  public EnderecoEmbutido(String rua1Param, String rua2Param, String cidadeParam, String estadoParam, String cepParam, String paisParam) {
     rua1 = rua1Param;
     rua2 = rua2Param;
     cidade = cidadeParam;
@@ -49,14 +40,7 @@ public class Endereco {
   // =          Getters & Setters         =
   // ======================================
 
-  public Long getId() {
-    return id;
-  }
-
-  public void setId(Long id) {
-    this.id = id;
-  }
-
+  @Column(nullable = false)
   public String getRua1() {
     return rua1;
   }
@@ -73,6 +57,7 @@ public class Endereco {
     this.rua2 = rua2;
   }
 
+  @Column(nullable = false, length = 50)
   public String getCidade() {
     return cidade;
   }
@@ -81,6 +66,7 @@ public class Endereco {
     this.cidade = cidade;
   }
 
+  @Column(length = 3)
   public String getEstado() {
     return estado;
   }
@@ -89,6 +75,7 @@ public class Endereco {
     this.estado = estado;
   }
 
+  @Column(name = "zip_code", length = 10)
   public String getCep() {
     return cep;
   }

@@ -8,11 +8,9 @@ import static org.junit.Assert.assertNotNull;
 
 public class LivroTesteIntegrado extends TestePersistenciaAbstrato {
 
-  // ======================================
+    // ======================================
     // =           Teste Unitario           =
     // ======================================
-
-
     @Test
     public void deveriaCriarUmLivro() throws Exception {
 

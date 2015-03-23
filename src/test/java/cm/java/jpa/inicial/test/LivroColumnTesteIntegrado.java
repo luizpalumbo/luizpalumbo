@@ -2,7 +2,6 @@ package cm.java.jpa.inicial.test;
 
 import cm.java.jpa.entidades.LivroColumn;
 import cm.java.jpa.inicial.TestePersistenciaAbstrato;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

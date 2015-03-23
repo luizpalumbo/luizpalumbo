@@ -13,7 +13,7 @@ import javax.persistence.Table;
 public class NoticiaClasseId {
 
   // ======================================
-  // =             Attributos             =
+  // =             Atributos              =
   // ======================================
 
   @Id

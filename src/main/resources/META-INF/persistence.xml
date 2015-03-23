@@ -9,6 +9,11 @@
     <class>cm.java.jpa.entidades.NoticiaClasseId</class>
     <class>cm.java.jpa.entidades.TrilhaMusica</class>
     <class>cm.java.jpa.entidades.LivroColumn</class>
+    <class>cm.java.jpa.entidades.Consumidor</class>
+    <class>cm.java.jpa.entidades.CartaoCredito</class>
+    <class>cm.java.jpa.entidades.ConsumidorPorMetodos</class>
+    <class>cm.java.jpa.entidades.LivroEtiqueta</class>
+    <class>cm.java.jpa.entidades.ConsumidorComEndereco</class>
     <properties>
       <property name="eclipselink.canonicalmodel.subpackage" value="one"/>
       <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
@@ -32,6 +37,11 @@
     <class>cm.java.jpa.entidades.NoticiaClasseId</class>
     <class>cm.java.jpa.entidades.TrilhaMusica</class>
     <class>cm.java.jpa.entidades.LivroColumn</class>
+    <class>cm.java.jpa.entidades.Consumidor</class>
+    <class>cm.java.jpa.entidades.CartaoCredito</class>
+    <class>cm.java.jpa.entidades.ConsumidorPorMetodos</class>
+    <class>cm.java.jpa.entidades.LivroEtiqueta</class>
+    <class>cm.java.jpa.entidades.ConsumidorComEndereco</class>
     <properties>
       <property name="eclipselink.canonicalmodel.subpackage" value="two"/>
       <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>

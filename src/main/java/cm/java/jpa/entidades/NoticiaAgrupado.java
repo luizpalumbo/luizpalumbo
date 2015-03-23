@@ -10,7 +10,7 @@ import javax.persistence.Table;
 public class NoticiaAgrupado {
 
   // ======================================
-  // =             Attributes             =
+  // =             Atributos              =
   // ======================================
 
   @EmbeddedId

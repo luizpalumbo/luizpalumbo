@@ -10,7 +10,7 @@ import static org.junit.Assert.assertNotNull;
 public class TrilhaMusicaTesteIntegrado extends TestePersistenciaAbstrato {
 
   // ======================================
-  // =              Unit tests            =
+  // =           Testes Unitários         =
   // ======================================
 
   @Test

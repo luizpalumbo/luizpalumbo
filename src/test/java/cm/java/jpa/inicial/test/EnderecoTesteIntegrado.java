@@ -9,7 +9,7 @@ import static org.junit.Assert.assertNotNull;
 public class EnderecoTesteIntegrado extends TestePersistenciaAbstrato {
 
   // ======================================
-  // =              Testes Unitarios            =
+  // =              Testes unitários      =
   // ======================================
 
   @Test

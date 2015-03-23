@@ -6,14 +6,14 @@ import javax.persistence.Embeddable;
 public class NoticiaIdAgrupado {
 
   // ======================================
-  // =             Attributos             =
+  // =             Atributos              =
   // ======================================
 
   private String titulo;
   private String idioma;
 
   // ======================================
-  // =            Constructors            =
+  // =            Construtores            =
   // ======================================
 
   public NoticiaIdAgrupado() {
