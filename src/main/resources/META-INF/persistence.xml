@@ -14,6 +14,11 @@
     <class>cm.java.jpa.entidades.ConsumidorPorMetodos</class>
     <class>cm.java.jpa.entidades.LivroEtiqueta</class>
     <class>cm.java.jpa.entidades.ConsumidorComEndereco</class>
+    <class>cm.java.jpa.entidades.ConsumidorUmParaUmUni</class>
+    <class>cm.java.jpa.entidades.EnderecoEnt</class>
+    <class>cm.java.jpa.entidades.ConsumidorUmParaUmUniJoin</class>
+    <class>cm.java.jpa.entidades.ItemCompra</class>
+    <class>cm.java.jpa.entidades.Recibo</class>
     <properties>
       <property name="eclipselink.canonicalmodel.subpackage" value="one"/>
       <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
@@ -42,6 +47,11 @@
     <class>cm.java.jpa.entidades.ConsumidorPorMetodos</class>
     <class>cm.java.jpa.entidades.LivroEtiqueta</class>
     <class>cm.java.jpa.entidades.ConsumidorComEndereco</class>
+    <class>cm.java.jpa.entidades.ConsumidorUmParaUmUni</class>
+    <class>cm.java.jpa.entidades.EnderecoEnt</class>
+    <class>cm.java.jpa.entidades.ConsumidorUmParaUmUniJoin</class>
+    <class>cm.java.jpa.entidades.ItemCompra</class>
+    <class>cm.java.jpa.entidades.Recibo</class>
     <properties>
       <property name="eclipselink.canonicalmodel.subpackage" value="two"/>
       <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>

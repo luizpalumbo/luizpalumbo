@@ -13,9 +13,9 @@ public class LivroColumnTesteIntegrado extends TestePersistenciaAbstrato {
     // =           Testes Unitários         =
     // ======================================
     @Test
-    public void shouldCreateABook() throws Exception {
+    public void deveriaCriarUmLivro() throws Exception {
 
-        LivroColumn livro = new LivroColumn("Guia do Muchileiro das Galáxias", 12.5F, "O Guia do Mochileiro das Galáxias é uma série de comédia ficção científica criada por Douglas Adams.", "1-84023-742-2", 354, false);
+        LivroColumn livro = new LivroColumn("Guia do Mochileiro das Galáxias", 12.5F, "O Guia do Mochileiro das Galáxias é uma série de comédia ficção científica criada por Douglas Adams.", "1-84023-742-2", 354, false);
         tx.begin();
         em.persist(livro);
         tx.commit();
@@ -26,7 +26,7 @@ public class LivroColumnTesteIntegrado extends TestePersistenciaAbstrato {
     //@Ignore("updatable = false não funciona")
     public void titleShouldNotBeUpdatable() throws Exception {
 
-        LivroColumn livro = new LivroColumn("Guia do Muchileiro das Galáxias", 12.5F, "O Guia do Mochileiro das Galáxias é uma série de comédia ficção científica criada por Douglas Adams.", "1-84023-742-2", 354, false);
+        LivroColumn livro = new LivroColumn("Guia do Mochileiro das Galáxias", 12.5F, "O Guia do Mochileiro das Galáxias é uma série de comédia ficção científica criada por Douglas Adams.", "1-84023-742-2", 354, false);
         tx.begin();
         em.persist(livro);
         tx.commit();
