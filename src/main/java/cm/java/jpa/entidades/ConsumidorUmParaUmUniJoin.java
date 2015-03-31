@@ -9,7 +9,7 @@ import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "t_consumidor")
+@Table(name = "t_consumidor_11uni_join")
 public class ConsumidorUmParaUmUniJoin {
 
   // ======================================
