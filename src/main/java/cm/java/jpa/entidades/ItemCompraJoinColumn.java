@@ -27,10 +27,10 @@ public class ItemCompraJoinColumn {
   public ItemCompraJoinColumn() {
   }
 
-  public ItemCompraJoinColumn(String itemParam, Double precoUnitarioParam, Integer quantidade) {
+  public ItemCompraJoinColumn(String itemParam, Double precoUnitarioParam, Integer quantidadeParam) {
     item = itemParam;
     precoUnitario = precoUnitarioParam;
-    quantidade = quantidade;
+    quantidade = quantidadeParam;
   }
 
   // ======================================
